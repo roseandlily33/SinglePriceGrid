@@ -1,0 +1,139 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+--bodyFontSize: 16px;
+--fontFamily :'Karla', sans-serif;
+}
+body{
+    background-color: var(--LightGray);
+
+}
+#outerCont{
+    padding: 10%;
+}
+#container{
+    font-family: var(--fontFamily);
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 70%;
+    flex: 5 2 auto;
+    padding: 1em;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 700;
+    
+}
+#top{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 1em;
+
+} 
+#top h1{
+    color: var(--Cyan);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+    
+}
+#top h2{
+    color: var(--BrightYellow);
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+#top p{
+    color: var(--GrayishBlue);
+    font-weight: 400;
+    line-height: 1.5em;
+
+}
+#middle{
+    background-color: var(--Cyan);
+    color: white;
+    padding: 1em;
+
+}
+#middle h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+#middle span{
+    font-weight: 200;
+    opacity: 50%;
+
+}
+#middle strong{
+    font-size: 2em;
+    font-weight: 700;
+    padding-right: 1rem;
+    padding-bottom: 1em;
+}
+#middle h4{
+    font-weight: 300;
+    opacity: 80%;
+    padding-block: 1em;
+}
+button{
+    background-color: var(--BrightYellow);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    margin: 2%;
+    padding: 15px 30px;
+    box-shadow: 2px 3px 5px 5px cadetblue;
+
+}
+button:hover{
+    background-color: var(--GrayishBlue);
+}
+#bottom{
+    background-color: var(--BrightYellow);
+    color: white;
+    padding: 1em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+#bottom h5{
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 1.4em;
+}
+#bottom p{
+    line-height: 1.5rem;
+    font-weight: 400;
+
+}
+@media screen and (min-width: 768px){
+    #wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    #top{
+        height:16em;
+        padding-block: 2em;
+    }
+    #middle{
+     border-bottom-left-radius: 10px;
+     flex-grow: 2;
+    }
+    #bottom{
+        border-bottom-left-radius: 0px;
+        flex-grow: 2;
+    }
+}
